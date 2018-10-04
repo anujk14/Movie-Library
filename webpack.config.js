@@ -2,6 +2,7 @@
 // (1) we want to use the src/index.js file as entry point to bundle all of its imported files.
 // (2) The bundled files will result in a bundle.js file which
 // (3) will be generated in our already set up /dist folder. The /dist folder will be used to serve our app.
+const webpack = require('webpack');
 
 module.exports = {
   entry: "./src/index.js",
@@ -22,7 +23,11 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js'
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    hot: true
   }
 };
