@@ -1,0 +1,34 @@
+{
+  "name": "movie-library",
+  "version": "1.0.0",
+  "description": "React app that uses OMDb APIs to display information about movies",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anujk14/Movie-Library.git"
+  },
+  "author": "Anuj Khandelwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anujk14/Movie-Library/issues"
+  },
+  "homepage": "https://github.com/anujk14/Movie-Library#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "react-hot-loader": "^4.3.11",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}
